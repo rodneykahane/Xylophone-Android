@@ -45,10 +45,31 @@ public class MainActivity extends AppCompatActivity {
     public void playC(View v){
         Log.d("Xylophone","Red Button Clicked!");//debugging
 
+    }//end PlayC
+    public void playD(View v){
+        Log.d("Xylophone","Orange Button Clicked!");//debugging
+
+    }//end PlayD
+    public void playE(View v){
+        Log.d("Xylophone","Yellow Button Clicked!");//debugging
+
+    }//end PlayE
+    public void playF(View v){
+        Log.d("Xylophone","Turquoise Button Clicked!");//debugging
+
+    }//end PlayF
+    public void playG(View v){
+        Log.d("Xylophone","Green Button Clicked!");//debugging
+
+    }//end PlayG
+    public void playA(View v){
+        Log.d("Xylophone","Blue Button Clicked!");//debugging
+
+    }//end PlayA
+    public void playB(View v){
+        Log.d("Xylophone","Purple Button Clicked!");//debugging
+
+    }//end PlayB
 
 
-
-    }
-
-
-}
+}//end class
