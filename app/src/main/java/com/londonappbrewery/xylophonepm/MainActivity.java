@@ -4,6 +4,7 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +42,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // TODO: Add the play methods triggered by the buttons
+    public void playC(View v){
+        Log.d("Xylophone","Red Button Clicked!");//debugging
 
+
+
+
+    }
 
 
 }
