@@ -37,37 +37,51 @@ public class MainActivity extends AppCompatActivity {
         mSoundPool = new SoundPool(NR_OF_SIMULTANEOUS_SOUNDS,AudioManager.STREAM_MUSIC,0);
 
         // TODO: Load and get the IDs to identify the sounds
+        mCSoundId = mSoundPool.load(getApplicationContext(),R.raw.note1_c,1);
+        mDSoundId = mSoundPool.load(getApplicationContext(),R.raw.note2_d,1);
+        mESoundId = mSoundPool.load(getApplicationContext(),R.raw.note3_e,1);
+        mFSoundId = mSoundPool.load(getApplicationContext(),R.raw.note4_f,1);
+        mGSoundId = mSoundPool.load(getApplicationContext(),R.raw.note5_g,1);
+        mASoundId = mSoundPool.load(getApplicationContext(),R.raw.note6_a,1);
+        mBSoundId = mSoundPool.load(getApplicationContext(),R.raw.note7_b,1);
 
-
-    }
+    }// end onCreate
 
     // TODO: Add the play methods triggered by the buttons
+    // these methods are called from the android:onClick properties in the activity_main.xml
     public void playC(View v){
-        Log.d("Xylophone","Red Button Clicked!");//debugging
+        //Log.d("Xylophone","Red Button Clicked!");//debugging
+        mSoundPool.play(mCSoundId,1.0f,1.0f,0,0,1.0f);
 
     }//end PlayC
     public void playD(View v){
-        Log.d("Xylophone","Orange Button Clicked!");//debugging
+        //Log.d("Xylophone","Orange Button Clicked!");//debugging
+        mSoundPool.play(mDSoundId,1.0f,1.0f,0,0,1.0f);
 
     }//end PlayD
     public void playE(View v){
-        Log.d("Xylophone","Yellow Button Clicked!");//debugging
+        //Log.d("Xylophone","Yellow Button Clicked!");//debugging
+        mSoundPool.play(mESoundId,1.0f,1.0f,0,0,1.0f);
 
     }//end PlayE
     public void playF(View v){
-        Log.d("Xylophone","Turquoise Button Clicked!");//debugging
+        //Log.d("Xylophone","Turquoise Button Clicked!");//debugging
+        mSoundPool.play(mFSoundId,1.0f,1.0f,0,0,1.0f);
 
     }//end PlayF
     public void playG(View v){
-        Log.d("Xylophone","Green Button Clicked!");//debugging
+        //Log.d("Xylophone","Green Button Clicked!");//debugging
+        mSoundPool.play(mGSoundId,1.0f,1.0f,0,0,1.0f);
 
     }//end PlayG
     public void playA(View v){
-        Log.d("Xylophone","Blue Button Clicked!");//debugging
+        //Log.d("Xylophone","Blue Button Clicked!");//debugging
+        mSoundPool.play(mASoundId,1.0f,1.0f,0,0,1.0f);
 
     }//end PlayA
     public void playB(View v){
-        Log.d("Xylophone","Purple Button Clicked!");//debugging
+        //Log.d("Xylophone","Purple Button Clicked!");//debugging
+        mSoundPool.play(mBSoundId,1.0f,1.0f,0,0,1.0f);
 
     }//end PlayB
 
